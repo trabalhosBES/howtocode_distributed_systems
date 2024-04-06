@@ -22,7 +22,6 @@ import java.util.List;
 
 @RestController
 public class ServiceDiscoveryHealthCheckController {
-
     @Autowired
     @Lazy
     private EurekaClient eurekaClient;
