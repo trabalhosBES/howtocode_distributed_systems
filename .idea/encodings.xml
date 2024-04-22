@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/message_communication_rmi_eureka/rmi-client-a/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/message_communication_rmi_eureka/rmi-client-b/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/message_communication_rmi_eureka/rmi-server/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/message_communication_websocket_eureka/websocket-client-a/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/message_communication_websocket_eureka/websocket-client-b/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/message_communication_websocket_eureka/websocket-client-b/websocket-client-b/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/message_communication_websocket_eureka/websocket-client-b/websocket-client-b/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/message_communication_websocket_eureka/websocket-server/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/service_discovery_eureka/demo-eureka-app/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/service_discovery_eureka/demo-eureka-client-a/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/service_discovery_eureka/demo-eureka-client-b/src/main/java" charset="UTF-8" />
+  </component>
+</project>

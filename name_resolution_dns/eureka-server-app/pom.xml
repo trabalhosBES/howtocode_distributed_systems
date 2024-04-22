@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>br.com.everdev</groupId>
-	<artifactId>websocket-server</artifactId>
+	<artifactId>eureka-server-app</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>websocket-server</name>
+	<name>eureka-server-app</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>21</java.version>
@@ -30,11 +30,12 @@
 			<artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
 		</dependency>
 
-		<!-- Spring Websocket -->
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-websocket</artifactId>
+			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
+
 
 		<!-- General -->
 		<!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->

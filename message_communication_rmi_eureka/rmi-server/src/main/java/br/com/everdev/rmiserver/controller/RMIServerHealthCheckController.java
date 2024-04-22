@@ -1,15 +1,12 @@
-package br.com.everdev.websocketclientb.controller;
+package br.com.everdev.rmiserver.controller;
 
 import com.netflix.appinfo.InstanceInfo;
 import com.netflix.discovery.EurekaClient;
 import com.netflix.discovery.shared.Applications;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.client.HttpClientErrorException;
-import org.springframework.web.client.RestClient;
 
 import java.io.IOException;
 import java.net.URI;
@@ -21,7 +18,7 @@ import java.time.LocalDateTime;
 import java.util.List;
 
 @RestController
-public class ServiceDiscoveryHealthCheckController {
+public class RMIServerHealthCheckController {
     @Autowired
     @Lazy
     private EurekaClient eurekaClient;

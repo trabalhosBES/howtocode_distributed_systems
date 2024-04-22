@@ -1,15 +1,12 @@
-package br.com.everdev.websocketclientb.controller;
+package br.com.everdev.rmiclienta.controller;
 
 import com.netflix.appinfo.InstanceInfo;
 import com.netflix.discovery.EurekaClient;
 import com.netflix.discovery.shared.Applications;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.client.HttpClientErrorException;
-import org.springframework.web.client.RestClient;
 
 import java.io.IOException;
 import java.net.URI;
@@ -21,7 +18,7 @@ import java.time.LocalDateTime;
 import java.util.List;
 
 @RestController
-public class ServiceDiscoveryHealthCheckController {
+public class RMIClientAHealthCheckController {
     @Autowired
     @Lazy
     private EurekaClient eurekaClient;
@@ -29,6 +26,7 @@ public class ServiceDiscoveryHealthCheckController {
     @Value("${spring.application.name}")
     private String appName;
 
+    //endereço para testar se a aplicação está funcional
     @GetMapping("/health")
     public String healthy() {
         return "Estpu vivo e bem! Sou a app "+appName+" - " + LocalDateTime.now();
@@ -47,7 +45,7 @@ public class ServiceDiscoveryHealthCheckController {
 
     @GetMapping("/makeCall/{name}")
     public String makeCall(@PathVariable String name) throws URISyntaxException {
-        String message = "Olá, tem alguem ai??";
+        String message = "Olá, tem alguem ai?!";
 
         List<InstanceInfo> instances = eurekaClient.getInstancesById(name);
 
