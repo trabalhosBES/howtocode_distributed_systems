@@ -13,3 +13,8 @@ eureka:
       enabled: true
     register-with-eureka: false
     fetch-registry: false
+
+#DNS
+client:
+  service:
+    id: dns-server-app
