@@ -29,12 +29,10 @@ public class ApplicationDiscoveryController {
     }
 
     @GetMapping("/list-applications")
-    public ResponseEntity listApplications() throws Exception {
+    public String listApplications() throws Exception {
         try{
-            ///TODO: Remover comentários quando o professor resolver o getApplications
-            //Applications otherApps = eurekaClient.getApplications();
-            //return otherApps.getRegisteredApplications().toString();
-            return ResponseEntity.ok().build();
+            Applications otherApps = eurekaClient.getApplications();
+            return otherApps.getRegisteredApplications().toString();
         } catch (Exception exception){
             throw new Exception();
         }

@@ -4,12 +4,10 @@ import br.com.everdev.nameresolutionispserver.util.Constants;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.client.RestTemplate;
 import org.springframework.web.reactive.function.client.WebClient;
 import reactor.core.publisher.Mono;
 
 import java.time.LocalDateTime;
-import java.util.Optional;
 
 @RestController
 public class ISPServerHealthCheckController {
@@ -29,14 +27,14 @@ public class ISPServerHealthCheckController {
     }
 
     @GetMapping("/service")
-    public Mono<ResponseEntity> callDNS() {
+    public Mono<String> callDNS() {
 
         try{
 
             return webClient.get()
-                    .uri(Constants.DNSEndPoint.CALL_EUREKA_GET_APPLICATIONS)
+                    .uri(Constants.DNSEndPoint.GET_REGISTERED_APPLICATIONS)
                     .retrieve()
-                    .bodyToMono(ResponseEntity.class);
+                    .bodyToMono(String.class);
 
 
         } catch (Exception ex){
