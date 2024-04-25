@@ -5,19 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="02e78ea1-2376-411a-be63-21f9b163fb17" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/name_resolution_dns/dns-server-app/src/main/java/br/com/everdev/nameresolution.dnsserver/controller/DNSServerHealthCheckController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/name_resolution_dns/dns-server-app/src/main/java/br/com/everdev/nameresolutiondnsserver/controller/DNSServerHealthCheckController.java" beforeDir="false" afterPath="$PROJECT_DIR$/name_resolution_dns/dns-server-app/src/main/java/br/com/everdev/nameresolutiondnsserver/controller/DNSServerHealthCheckController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/name_resolution_dns/eureka-server-app/src/main/java/br/com/everdev/nameresolution.eurekaserver/controller/ApplicationDiscoveryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/name_resolution_dns/eureka-server-app/src/main/java/br/com/everdev/nameresolution.eurekaserver/controller/ApplicationDiscoveryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/name_resolution_dns/dns-server-app/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/name_resolution_dns/dns-server-app/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/name_resolution_dns/isp-server-app/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/name_resolution_dns/isp-server-app/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/name_resolution_dns/isp-server-app/src/main/java/br/com/everdev/nameresolutionispserver/controller/ISPServerHealthCheckController.java" beforeDir="false" afterPath="$PROJECT_DIR$/name_resolution_dns/isp-server-app/src/main/java/br/com/everdev/nameresolutionispserver/controller/ISPServerHealthCheckController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/name_resolution_dns/isp-server-app/src/main/java/br/com/everdev/nameresolutionispserver/util/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/name_resolution_dns/isp-server-app/src/main/java/br/com/everdev/nameresolutionispserver/util/Constants.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -33,6 +36,9 @@
     </option>
   </component>
   <component name="ProjectId" id="2fZM2oFYicxFuyZ5X1QE4nCXOBB" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -145,7 +151,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1714003942028</updated>
-      <workItem from="1714003943799" duration="1830000" />
+      <workItem from="1714003943799" duration="6123000" />
     </task>
     <servers />
   </component>
@@ -160,7 +166,27 @@
           <line>33</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/name_resolution_dns/perfil-app/src/main/java/br/com/everdev/nameresolution.perfil/controller/PerfilHealthCheckController.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/name_resolution_dns/validacao-app/src/main/java/br/com/everdev/nameresolution.validacao/controller/ValidacaoHealthCheckController.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/name_resolution_dns/isp-server-app/src/main/java/br/com/everdev/nameresolutionispserver/controller/ISPServerHealthCheckController.java</url>
+          <line>44</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="com.google.gson.JsonPrimitive" memberName="value" />
+      </pinned-members>
+    </pin-to-top-manager>
   </component>
 </project>

@@ -1,8 +1,11 @@
 package br.com.everdev.nameresolutionispserver.controller;
 
+import br.com.everdev.nameresolutionispserver.service.ISPServerService;
 import br.com.everdev.nameresolutionispserver.util.Constants;
+import com.google.gson.JsonElement;
+import com.google.gson.JsonParser;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.reactive.function.client.WebClient;
 import reactor.core.publisher.Mono;
@@ -11,6 +14,9 @@ import java.time.LocalDateTime;
 
 @RestController
 public class ISPServerHealthCheckController {
+
+    @Autowired
+    private ISPServerService ispServerService;
 
     @Value("${spring.application.name}")
     private String appName;
@@ -27,20 +33,35 @@ public class ISPServerHealthCheckController {
     }
 
     @GetMapping("/service")
-    public Mono<String> callDNS() {
+    public String callDNS() throws Exception {
 
         try{
 
-            return webClient.get()
+            var JSONresponse = webClient.get()
                     .uri(Constants.DNSEndPoint.GET_REGISTERED_APPLICATIONS)
                     .retrieve()
-                    .bodyToMono(String.class);
+                    .bodyToMono(String.class)
+                    .block();
+            JsonElement element = JsonParser.parseString(JSONresponse.toString());
+            if(element.isJsonObject()){
+                checkPorts(String.valueOf(element));
+            }
+            return JSONresponse.toString();
 
 
         } catch (Exception ex){
-            return Mono.error(new Exception("Não foi possivel realizar a requisição"));
+            throw new Exception("Não foi possivel realizar a requisição");
         }
 
+    }
+
+    public void checkPorts(String jsonInput) {
+        ispServerService.fetchHealthStatuses(jsonInput)
+                .subscribe(
+                        response -> System.out.println("Health Check Response: " + response),
+                        error -> System.err.println("Error during health check: " + error),
+                        () -> System.out.println("Completed health checks.")
+                );
     }
 
 }
