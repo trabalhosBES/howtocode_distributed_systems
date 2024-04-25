@@ -1,6 +1,8 @@
 package br.com.everdev.nameresolution.eurekaserver.controller;
 
+import com.netflix.appinfo.ApplicationInfoManager;
 import com.netflix.discovery.EurekaClient;
+import com.netflix.discovery.EurekaClientConfig;
 import com.netflix.discovery.shared.Applications;
 import org.glassfish.jaxb.core.v2.TODO;
 import org.springframework.beans.factory.annotation.Autowired;
